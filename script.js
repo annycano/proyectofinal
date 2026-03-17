@@ -25,9 +25,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
 document.querySelectorAll(".logo").forEach(function(logo){
     logo.addEventListener("click", function(){
         window.location.href = "index.html";
     });
 });
+
+
+const slider = document.querySelector(".testimonios-slider");
+
+
+
+document.querySelector(".next").onclick = () => {
+slider.scrollLeft += 320;
+}
+
+
+document.querySelector(".prev").onclick = () => {
+slider.scrollLeft -= 320;
+}
+
+
+// carrito //
+
