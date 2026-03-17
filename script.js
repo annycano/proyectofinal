@@ -1,3 +1,5 @@
+
+
 // Menu toggle functionality
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menu-toggle');
@@ -25,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+
 document.querySelectorAll(".logo").forEach(function(logo){
     logo.addEventListener("click", function(){
         window.location.href = "index.html";
@@ -46,5 +50,5 @@ slider.scrollLeft -= 320;
 }
 
 
-// carrito //
+
 
