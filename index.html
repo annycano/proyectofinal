@@ -28,6 +28,13 @@
     <meta property="og:site_name" content="Anny Cano">
     <meta property="og:locale" content="es_CO">
 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Anny Cano | Detalles, Repostería y Regalos Personalizados">
+    <meta name="twitter:description"
+        content="Detalles personalizados, repostería artesanal y regalos para eventos especiales.">
+    <meta name="twitter:image" content="https://annycano.online/img/preview.jpg">
+    <meta name="twitter:url" content="https://annycano.online">             
+
 </head>
 
 <body>
@@ -43,10 +50,24 @@
                     <li><a href="empresarial.html"><strong>Empresarial</strong></a> </li>
                     <li><a href="temporada.html"><strong>Temporada</strong></a></li>
                     <li><a href="servicios.html"><strong>Servicios</strong></a></li>
+                    <li><a href="contacto.html"><strong>Información</strong></a></li>
                 </ul>
             </nav>
         </div>
 
+<div id="buscador-panel" class="buscador-panel">
+
+    <div class="buscador-contenido">
+
+        <input type="text" id="input-busqueda" placeholder="Buscar productos...">
+
+        <button id="cerrar-buscador">✕</button>
+
+    </div>
+
+    <ul id="resultados-busqueda"></ul>
+
+</div>
 
         <a href="index.html" id="inicio" class="logo">
             <img src="img/logoannycano.svg" alt="Logo Anny Cano repostería y detalles personalizados">
@@ -55,12 +76,13 @@
         <a href="carito.html" id="carrito" aria-label="Carrito de compras" style="text-decoration: none;">
             <i class="fa-solid fa-cart-shopping"></i>
         </a>
-        <a href="contacto.html" id="buscador" aria-label="Buscar" style="text-decoration: none;">
+        <a href="buscador.js" id="buscador" aria-label="Buscar" style="text-decoration: none;">
             <i class="fa-solid fa-magnifying-glass"></i>
         </a>
         <a href="usurio.html" id="usuario" aria-label="Usuario" style="text-decoration: none;">
             <i class="fa-solid fa-user"></i>
         </a>
+        
     </header>
 
     <div class="contenedor-texto">
@@ -137,25 +159,25 @@
         <section id="reposteria">
             <h2>Repostería</h2>
             <img src="/img/resposteriaimg.png" alt="Repostería personalizada en Cali">
-            <a href="reposteria.html"><strong>Mas Informacion</strong></a>
+            <a href="reposteria.html"><strong>Ver más información</strong></a>
         </section>
 
         <section id="eventos">
             <h2>Eventos</h2>
             <img src="/img/eventosimg.png" alt="Decoración y mesas dulces para eventos">
-            <a href="eventos.html"><strong>Mas Informacion</strong></a>
+            <a href="eventos.html"><strong>Ver más información</strong></a>
         </section>
 
         <section id="detalles">
             <h2>Detalles</h2>
             <img src="/img/detallesimg.png" alt="Detalles personalizados para regalos">
-            <a href="detalles.html"><strong>Mas Informacion</strong></a>
+            <a href="detalles.html"><strong>Ver más informaciónn</strong></a>
         </section>
 
         <section id="empresarial">
             <h2>Empresarial</h2>
             <img src="/img/empresarialesimg.png" alt="Regalos empresariales personalizados">
-            <a href="empresarial.html"><strong>Mas Informacion</strong></a>
+            <a href="empresarial.html"><strong>Ver más información</strong></a>
         </section>
 
     </div>
@@ -286,7 +308,7 @@
 
     <aside>
         <ul>
-            <li><a href="/detallespersonalizados">Detalles personalizados</a></li>
+            <li><a href="/detallespersonalizados.html">Detalles personalizados</a></li>
             <li>
                 <hr>
             </li>
@@ -310,17 +332,28 @@
 
     </aside>
 
-    <footer>
+<section class="logofooter">
+    <div class="logo-centro">
+        <img src="/img/logoannycano.svg" alt="Logo Anny Cano">
+        <p><strong>Medios de Pago</strong></p>
+        <img src="/img/mediosdepago.png" alt="medios de pago">
+        
+    </div>
+</section>
+
+   <footer>
         <div class="footer-content">
             <ul>
-                <li><a href="https://pinteres" target="_blank" class="fa-brands fa-pinterest-p"></a></li>
-                <li><a href="https://www.facebook.com/TUPAGINA" target="_blank" class="fa-brands fa-facebook-f"></a>
+                <li><a href="https://pin.it/a4Gz4DmQ9" target="_blank" class="fa-brands fa-pinterest-p"></a></li>
+                <li><a href="https://www.facebook.com/share/1Dy9TvHGU4/?mibextid=wwXIfr" target="_blank" class="fa-brands fa-facebook-f"></a>
                 </li>
-                <li><a href="https://tikyok.com/TUUSUARIO" target="_blank" class="fa-brands fa-tiktok"></a></li>
-                <li><a href="https://www.instagram.com/TUUSUARIO" target="_blank" class="fa-brands fa-instagram"></a>
+                <li><a href="https://www.tiktok.com/@annycano.red?_r=1&_t=ZS-94y0imVjsZx" target="_blank" class="fa-brands fa-tiktok"></a></li>
+                <li><a href="https://www.instagram.com/annycano.red?igsh=MTcwNDE0YWM1bzBsYQ%3D%3D&utm_source=qr" target="_blank" class="fa-brands fa-instagram"></a>
                 </li>
                 <li><a href="https://wa.me/573183880873" target="_blank" class="fa-brands fa-whatsapp"></a></li>
             </ul>
+            
+            <p> 📍Ubicados en Santiado de Cali , Colombia.</p>
             <p>&copy; 2026 ANNY CANO Repostería. Todos los derechos reservados.</p>
         </div>
     </footer>
@@ -337,9 +370,15 @@
     </a>
 
     
+   <script src="script.js"></script>
     <script src="carrito.js"></script>
+    <script src="catalogo.js"></script>
+    <script src="pedido-personalizado.js"></script>
     <script src="menu.js"></script>
-    <script src="script.js"></script>
+    <script src="usurio.js"></script>
+    <script src="buscador.js"></script>
+    <script src="contacto.js"></script>
+    
 
 </body>
 

@@ -37,6 +37,7 @@
                     <li><a href="empresarial.html"><strong>Empresarial</strong></a> </li>
                     <li><a href="temporada.html"><strong>Temporada</strong></a></li>
                     <li><a href="servicios.html"><strong>Servicios</strong></a></li>
+                    <li><a href="contacto.html"><strong>Información</strong></a></li>
                 </ul>
             </nav>
         </div>
@@ -49,7 +50,7 @@
         <a href="carito.html" id="carrito" aria-label="Carrito de compras" style="text-decoration: none;">
             <i class="fa-solid fa-cart-shopping"></i>
         </a>
-        <a href="contacto.html" id="buscador" aria-label="Buscar" style="text-decoration: none;">
+        <a href="#" id="buscador" aria-label="Buscar" style="text-decoration: none;">
             <i class="fa-solid fa-magnifying-glass"></i>
         </a>
         <a href="usurio.html" id="usuario" aria-label="Usuario" style="text-decoration: none;">
@@ -58,14 +59,61 @@
     </header>
 
     <div id="seguimos" class="seguimos">
-        <img src="/img/SEGUIMOS CREANDO.png" alt="Eventos">
+        <img src="img/informacion.png" alt="Eventos">
         <a id="cons" class="cons1" href="https://wa.me/573183880873">Ordenar ahora</a>
     </div>
+    </div>
 
-   
+
+
+    <section class="usuario-login">
+
+        <h5>Cuenta de cliente</h5>
+
+        <p class="usuario-subtitulo">Ingresa a tu cuenta o crea tu registro para guardar tus datos y agilizar tus
+            pedidos.</p>
+
+        <div class="login-box">
+
+            <h6>Iniciar sesion</h6>
+
+            <input type="text" id="login-usuario" placeholder="Usuario" autocomplete="username">
+
+            <input type="password" id="login-password" placeholder="Contrasena" autocomplete="current-password">
+
+            <button id="btn-login">Ingresar</button>
+
+            <p id="mensaje-login" class="form-message" aria-live="polite"></p>
+
+        </div>
+
+        <div class="registro-box">
+
+            <h6>Crear registro</h6>
+
+            <input type="text" id="registro-usuario" placeholder="Crea tu usuario" autocomplete="username">
+
+            <input type="password" id="registro-password" placeholder="Crea tu contrasena" autocomplete="new-password">
+
+            <button id="btn-registro">Crear cuenta</button>
+
+            <p id="mensaje-registro" class="form-message" aria-live="polite"></p>
+
+        </div>
+
+        <div class="usuario-logeado" id="usuario-logeado" style="display:none;">
+
+            <p>Bienvenida, <span id="nombre-usuario"></span></p>
+
+            <button id="cerrar-sesion">Cerrar sesion</button>
+
+        </div>
+
+    </section>
+
     <aside>
         <ul>
-            <li><a href="/detallespersonalizados">Detalles personalizados</a></li>
+            <li><a href="/detallespersonalizados.html">Detalles personalizados</a></li>
             <li>
                 <hr>
             </li>
@@ -88,18 +136,22 @@
         </ul>
 
     </aside>
-
     <footer>
         <div class="footer-content">
             <ul>
-                <li><a href="https://pinteres" target="_blank" class="fa-brands fa-pinterest-p"></a></li>
-                <li><a href="https://www.facebook.com/TUPAGINA" target="_blank" class="fa-brands fa-facebook-f"></a>
+                <li><a href="https://pin.it/a4Gz4DmQ9" target="_blank" class="fa-brands fa-pinterest-p"></a></li>
+                <li><a href="https://www.facebook.com/share/1Dy9TvHGU4/?mibextid=wwXIfr" target="_blank"
+                        class="fa-brands fa-facebook-f"></a>
                 </li>
-                <li><a href="https://tikyok.com/TUUSUARIO" target="_blank" class="fa-brands fa-tiktok"></a></li>
-                <li><a href="https://www.instagram.com/TUUSUARIO" target="_blank" class="fa-brands fa-instagram"></a>
+                <li><a href="https://www.tiktok.com/@annycano.red?_r=1&_t=ZS-94y0imVjsZx" target="_blank"
+                        class="fa-brands fa-tiktok"></a></li>
+                <li><a href="https://www.instagram.com/annycano.red?igsh=MTcwNDE0YWM1bzBsYQ%3D%3D&utm_source=qr"
+                        target="_blank" class="fa-brands fa-instagram"></a>
                 </li>
-                <li><a href="wa.me/573183880873" target="_blank" class="fa-brands fa-whatsapp"></a></li>
+                <li><a href="https://wa.me/573183880873" target="_blank" class="fa-brands fa-whatsapp"></a></li>
             </ul>
+
+            <p> 📍Ubicados en Santiado de Cali , Colombia.</p>
             <p>&copy; 2026 ANNY CANO Repostería. Todos los derechos reservados.</p>
         </div>
     </footer>
@@ -117,6 +169,11 @@
     </a>
 
     <script src="script.js"></script>
+    <script src="carrito.js"></script>
+    <script src="menu.js"></script>
+    <script src="usuario.js"></script>
+    <script src="catalogo.js"></script>
+
 </body>
 
 </html>
